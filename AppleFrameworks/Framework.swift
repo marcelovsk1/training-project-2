@@ -15,8 +15,6 @@ struct Framework {
     
     struct MockData {
         
-        static let sampleFramework = Framework(name: "ARKit",
-               
         static let frameworks = [
             Framework(name: "App Clips",
                       imageName: "app-clip",
