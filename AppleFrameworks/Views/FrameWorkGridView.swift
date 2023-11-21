@@ -23,7 +23,7 @@ struct FrameWorkGridView: View {
                     }
                 }
             }
-            .navigationTitle("Frameworks")
+            .navigationTitle(" Frameworks")
         }
     }
 }

@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct FrameworkDetailView: View {
+    
+    var framework: Framework
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            FrameWorkTitleView(framework: framework)
+        }
     }
 }
 
 #Preview {
-    FrameworkDetailView()
+    FrameworkDetailView(framework: Framework(name: <#T##String#>, imageName: <#T##String#>, urlString: <#T##String#>, description: <#T##String#>))
 }
