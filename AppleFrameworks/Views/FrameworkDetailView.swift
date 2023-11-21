@@ -16,10 +16,11 @@ struct FrameworkDetailView: View {
             Spacer()
             
             FrameWorkTitleView(framework: framework)
-            Text(framework.description)
-                .font(.body)
-                .multilineTextAlignment(.leading)
-                .padding()
+                .preferredColorScheme(.dark)
+                Text(framework.description)
+                    .font(.body)
+                    .multilineTextAlignment(.leading)
+                    .padding()
             
             Spacer()
             
