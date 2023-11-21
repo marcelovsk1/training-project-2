@@ -14,6 +14,23 @@ struct FrameworkDetailView: View {
     var body: some View {
         VStack {
             FrameWorkTitleView(framework: framework)
+            Text(framework.description)
+                .font(.body)
+                .multilineTextAlignment(.leading)
+                .padding()
+            
+            Button {
+                
+            } label: {
+                Text("Learn More")
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                    .frame(width: 300, height: 60)
+                    .background(Color.indigo)
+                    .foregroundColor(.white)
+                    .cornerRadius(15)
+                    .padding()
+            }
         }
     }
 }
