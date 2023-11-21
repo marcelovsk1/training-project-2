@@ -9,7 +9,9 @@ import SwiftUI
 
 struct FrameWorkGridView: View {
     var body: some View {
-        Text("hi data")
+        VStack {
+            Image("app-clip")
+        }
     }
 }
 
