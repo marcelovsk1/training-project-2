@@ -22,6 +22,7 @@ struct FrameWorkTitleView: View {
                 .minimumScaleFactor(0.5)
             
         }
+        .padding()
     }
 }
 
