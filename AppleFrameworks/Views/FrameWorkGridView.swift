@@ -13,10 +13,17 @@ struct FrameWorkGridView: View {
                                GridItem(.flexible())]
     
     var body: some View {
-        LazyVGrid(columns: columns) {
-            ForEach(MockData.frameworks, id: \.id) { framework in
-                FrameWorkTitleView(framework: framework)
+        NavigationView {
+            ScrollView {
+                LazyVGrid(columns: columns) {
+                    ForEach(MockData.frameworks, id: \.id) { framework in
+                        FrameWorkTitleView(framework: framework)
+                            .preferredColorScheme(.dark)
+                        
+                    }
+                }
             }
+            .navigationTitle("Frameworks")
         }
     }
 }
