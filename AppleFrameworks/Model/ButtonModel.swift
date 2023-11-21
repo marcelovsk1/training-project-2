@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AFButtonModel: View {
+struct ButtonModel: View {
     
     var title: String
     
@@ -23,5 +23,5 @@ struct AFButtonModel: View {
 }
 
 #Preview {
-    AFButtonModel(title: "Test Title")
+    ButtonModel(title: "Test Title")
 }
