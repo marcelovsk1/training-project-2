@@ -13,10 +13,10 @@ struct FrameWorkTitleView: View {
     
     var body: some View {
         VStack {
-            Image("app-clip")
+            Image(imageName)
                 .resizable()
                 .frame(width: 90, height: 90)
-            Text("App Clips")
+            Text(name)
                 .font(.title2)
                 .fontWeight(.semibold)
                 .scaledToFit()
