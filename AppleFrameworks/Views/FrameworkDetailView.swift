@@ -19,5 +19,5 @@ struct FrameworkDetailView: View {
 }
 
 #Preview {
-    FrameworkDetailView(framework: Framework(name: <#T##String#>, imageName: <#T##String#>, urlString: <#T##String#>, description: <#T##String#>))
+    FrameworkDetailView(framework: MockData.sampleFramework)
 }
