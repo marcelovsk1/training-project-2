@@ -9,11 +9,14 @@ import SwiftUI
 
 struct FrameWorkGridView: View {
     
-    let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible())]
+    let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible()),
+                               GridItem(.flexible())]
     
     var body: some View {
         LazyVGrid(columns: columns) {
-            FrameWorkTitleView(name: "App Clips", imageName: "app-clip")
+            ForEach(MockData.frameworks, id: \.id) { framework in
+                FrameWorkTitleView(name: framework.name, imageName: framework.imageName)
+            }
         }
     }
 }
