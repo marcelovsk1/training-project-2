@@ -10,7 +10,7 @@ import SwiftUI
 struct FrameWorkGridView: View {
     var body: some View {
         VStack {
-            FrameWorkTitleView()
+            FrameWorkTitleView(name: "App Clips", imageName: "app-clip")
             
         }
     }
