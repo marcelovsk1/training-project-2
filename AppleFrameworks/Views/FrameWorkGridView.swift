@@ -9,16 +9,11 @@ import SwiftUI
 
 struct FrameWorkGridView: View {
     
-    let columns: [GridItem] = [GridItem(.flexible())]
+    let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
-        LazyVGrid(columns: columns, content: {
-            /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
-            /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
-        })
-        VStack {
+        LazyVGrid(columns: columns) {
             FrameWorkTitleView(name: "App Clips", imageName: "app-clip")
-            
         }
     }
 }
