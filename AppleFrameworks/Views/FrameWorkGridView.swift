@@ -11,13 +11,10 @@ struct FrameWorkGridView: View {
     
     @StateObject var viewModel = FrameworkGridViewModel()
     
-    let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible()),
-                               GridItem(.flexible())]
-    
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVGrid(columns: columns) {
+                LazyVGrid(columns: viewModel.columns) {
                     ForEach(MockData.frameworks, id: \.id) { framework in
                         FrameWorkTitleView(framework: framework)
                             .preferredColorScheme(.dark)
