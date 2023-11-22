@@ -22,7 +22,7 @@ struct FrameWorkGridView: View {
                         FrameWorkTitleView(framework: framework)
                             .preferredColorScheme(.dark)
                             .onTapGesture {
-                                print("")
+                                viewModel.selectedFramework = framework
                             }
                         
                     }
