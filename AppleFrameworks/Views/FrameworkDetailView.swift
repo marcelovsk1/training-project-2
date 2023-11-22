@@ -11,6 +11,7 @@ struct FrameworkDetailView: View {
     
     var framework: Framework
     @Binding var isShowingDetailView: Bool
+    @State private var isShowingSafariView = false
     
     var body: some View {
         VStack {
@@ -40,7 +41,7 @@ struct FrameworkDetailView: View {
             Spacer()
             
             Button {
-                
+                isShowingDetailView = true 
             } label: {
                 ButtonModel(title: "Learn More")
             }
