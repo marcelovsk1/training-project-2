@@ -9,6 +9,8 @@ import SwiftUI
 
 struct FrameWorkGridView: View {
     
+    @StateObject var viewModel = FrameworkGridViewModel()
+    
     let columns: [GridItem] = [GridItem(.flexible()), GridItem(.flexible()),
                                GridItem(.flexible())]
     

@@ -15,6 +15,7 @@
 		0BA8622F2B0CB4CF0094F6B6 /* FrameworkTitleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA8622E2B0CB4CF0094F6B6 /* FrameworkTitleModel.swift */; };
 		0BA862312B0D1BE50094F6B6 /* FrameworkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA862302B0D1BE50094F6B6 /* FrameworkDetailView.swift */; };
 		0BA862332B0D1EE20094F6B6 /* ButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA862322B0D1EE20094F6B6 /* ButtonModel.swift */; };
+		0BA862352B0E44E60094F6B6 /* FrameworkGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA862342B0E44E60094F6B6 /* FrameworkGridViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		0BA8622E2B0CB4CF0094F6B6 /* FrameworkTitleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkTitleModel.swift; sourceTree = "<group>"; };
 		0BA862302B0D1BE50094F6B6 /* FrameworkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkDetailView.swift; sourceTree = "<group>"; };
 		0BA862322B0D1EE20094F6B6 /* ButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModel.swift; sourceTree = "<group>"; };
+		0BA862342B0E44E60094F6B6 /* FrameworkGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameworkGridViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				0BA862262B07DC380094F6B6 /* FrameworkModel.swift */,
 				0BA8622E2B0CB4CF0094F6B6 /* FrameworkTitleModel.swift */,
 				0BA862322B0D1EE20094F6B6 /* ButtonModel.swift */,
+				0BA862342B0E44E60094F6B6 /* FrameworkGridViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				0BA862332B0D1EE20094F6B6 /* ButtonModel.swift in Sources */,
 				0BA862272B07DC380094F6B6 /* FrameworkModel.swift in Sources */,
 				0BA8622F2B0CB4CF0094F6B6 /* FrameworkTitleModel.swift in Sources */,
+				0BA862352B0E44E60094F6B6 /* FrameworkGridViewModel.swift in Sources */,
 				0BA862192B07DC1A0094F6B6 /* AppleFrameworksApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
