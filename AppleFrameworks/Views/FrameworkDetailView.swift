@@ -41,11 +41,14 @@ struct FrameworkDetailView: View {
             Spacer()
             
             Button {
-                isShowingDetailView = true 
+                isShowingDetailView = true
             } label: {
                 ButtonModel(title: "Learn More")
             }
         }
+        .sheet(isPresented: $isShowingSafariView, content: {
+            SafariViewModel(url: URL(string: framework.urlString) ?? URL(string: "www.apple.com")!)
+        })
     }
 }
 
