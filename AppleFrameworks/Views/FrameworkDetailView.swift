@@ -18,7 +18,7 @@ struct FrameworkDetailView: View {
                 Spacer()
                 
                 Button {
-                    isShowingDetailView = true
+                    isShowingDetailView = false
                 } label: {
                     Image(systemName: "xmark")
                         .foregroundColor(Color(.label))
