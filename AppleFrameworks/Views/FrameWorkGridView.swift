@@ -19,6 +19,9 @@ struct FrameWorkGridView: View {
                     ForEach(MockData.frameworks, id: \.id) { framework in
                         FrameWorkTitleView(framework: framework)
                             .preferredColorScheme(.dark)
+                            .onTapGesture {
+                                print("")
+                            }
                         
                     }
                 }
