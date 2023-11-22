@@ -30,7 +30,8 @@ struct FrameWorkGridView: View {
             }
             .navigationTitle(" Frameworks")
             .sheet(isPresented: $viewModel.isShowingDetailView) {
-                FrameworkDetailView(framework: viewModel.selectedFramework ?? MockData.sampleFramework)
+                FrameworkDetailView(framework: viewModel.selectedFramework!,
+                                    isShowingDetailView: $viewModel.isShowingDetailView)
             }
         }
     }
