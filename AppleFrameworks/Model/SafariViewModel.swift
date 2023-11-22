@@ -17,5 +17,6 @@ struct SafariViewModel: UIViewControllerRepresentable {
         SFSafariViewController(url: url)
     }
     
-    
+    func updateUIViewController(_ uiViewController: SFSafariViewController, context: 
+                                UIViewControllerRepresentableContext<SafariViewModel>) {}
 }
