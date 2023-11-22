@@ -26,6 +26,6 @@ struct FrameWorkTitleView: View {
     }
 }
 
-//#Preview {
-//    FrameWorkTitleView(name: <#String#>, imageName: <#String#>)
-//}
+#Preview {
+    FrameWorkTitleView(framework: MockData.sampleFramework)
+}
