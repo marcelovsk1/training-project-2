@@ -86,10 +86,8 @@
 			children = (
 				0BA862262B07DC380094F6B6 /* FrameworkModel.swift */,
 				0BA8622E2B0CB4CF0094F6B6 /* FrameworkTitleModel.swift */,
-				0BA862322B0D1EE20094F6B6 /* ButtonModel.swift */,
 				0BA862342B0E44E60094F6B6 /* FrameworkGridViewModel.swift */,
 				0BA862362B0E64180094F6B6 /* SafariViewModel.swift */,
-				0BA862382B0E764C0094F6B6 /* XDismissButtonViewModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -97,11 +95,29 @@
 		0BA8622D2B0CB49B0094F6B6 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0BA8623B2B0E78A10094F6B6 /* Buttons */,
+				0BA8623A2B0E789A0094F6B6 /* View */,
 				0BA862182B07DC1A0094F6B6 /* AppleFrameworksApp.swift */,
 				0BA862282B07DF0E0094F6B6 /* FrameWorkGridView.swift */,
 				0BA862302B0D1BE50094F6B6 /* FrameworkDetailView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		0BA8623A2B0E789A0094F6B6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0BA8623B2B0E78A10094F6B6 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				0BA862382B0E764C0094F6B6 /* XDismissButtonViewModel.swift */,
+				0BA862322B0D1EE20094F6B6 /* ButtonModel.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

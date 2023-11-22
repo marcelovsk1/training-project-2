@@ -11,7 +11,7 @@ struct FrameWorkTitleView: View {
     let framework: Framework
     
     var body: some View {
-        VStack {
+        HStack {
             Image(framework.imageName)
                 .resizable()
                 .frame(width: 90, height: 90)

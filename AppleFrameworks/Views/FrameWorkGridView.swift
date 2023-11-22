@@ -13,18 +13,15 @@ struct FrameWorkGridView: View {
     
     var body: some View {
         NavigationView {
-            ScrollView {
-                LazyVGrid(columns: viewModel.columns) {
-                    ForEach(MockData.frameworks, id: \.id) { framework in
+            List {
+                ForEach(MockData.frameworks, id: \.id) { framework in
+                    NavigationLink(destination: FrameworkDetailView(framework: framework, isShowingDetailView: $viewModel.isShowingDetailView)) {
                         FrameWorkTitleView(framework: framework)
                             .preferredColorScheme(.dark)
-                            .onTapGesture {
-                                viewModel.selectedFramework = framework
-                            }
-                        
                     }
                 }
             }
+            
             .navigationTitle(" Frameworks")
             .sheet(isPresented: $viewModel.isShowingDetailView) {
                 FrameworkDetailView(framework: viewModel.selectedFramework!,
